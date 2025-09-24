@@ -1,0 +1,27 @@
+/* glow-chatbot.css */
+:root { --gc-bg:#0b1220; --gc-panel:#111827; --gc-border: rgba(255,255,255,.08); --gc-text:#e5e7eb; --gc-muted:#9ca3af; }
+#gc-launcher {
+  position: fixed; bottom: 20px; right: 20px; z-index: 9999;
+  width: 56px; height: 56px; border-radius: 9999px; background: #7c3aed;
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.12);
+  cursor: pointer; font-weight: 700;
+}
+#gc-panel {
+  position: fixed; bottom: 90px; right: 20px; z-index: 9999;
+  width: 360px; max-width: 95vw; height: 520px; display:none; flex-direction: column;
+  background: rgba(17,24,39,.92); border: 1px solid var(--gc-border);
+  border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,.45); backdrop-filter: blur(10px);
+  overflow: hidden; color: var(--gc-text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif;
+}
+#gc-header { padding: 12px 14px; border-bottom: 1px solid var(--gc-border); display:flex; align-items:center; justify-content:space-between; }
+#gc-header .title { font-weight: 700; }
+#gc-header .close { background: transparent; border: 0; color: var(--gc-muted); font-size: 20px; cursor: pointer; }
+#gc-log { flex:1; overflow:auto; padding: 12px; display:flex; flex-direction: column; gap: 8px; }
+.gc-bubble { padding: 10px 12px; border-radius: 12px; max-width: 85%; white-space: pre-wrap; line-height: 1.4; }
+.gc-user { align-self: flex-end; background: #1f2937; }
+.gc-bot { align-self: flex-start; background: #0f172a; border: 1px solid var(--gc-border); }
+#gc-form { display:flex; gap: 8px; border-top: 1px solid var(--gc-border); padding: 8px; }
+#gc-input { flex: 1; background: #0b1220; color: var(--gc-text); border: 1px solid var(--gc-border); border-radius: 12px; padding: 10px 12px; }
+#gc-send { background: #7c3aed; color:#fff; border:0; border-radius: 12px; padding: 0 14px; font-weight:600; cursor: pointer; }
+.gc-hint { color: var(--gc-muted); font-size: 12px; text-align: center; padding: 6px 0 8px; }
