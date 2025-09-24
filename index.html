@@ -118,7 +118,7 @@
           <div id="formStatus" class="full note" role="status" aria-live="polite"></div>
         </form>
       </div>
-      <p class="note" style="margin-top:10px;">Prefer email? Write to <a href="mailto:hello@yourevents.com">hello@yourevents.com</a></p>
+      <p class="note" style="margin-top:10px;">Prefer email? Write to <a href="mailto:glowevents250@gmail.com">glowevents250@gmail.com</a></p>
     </section>
 
     <footer>© <span id="year"></span> Glow Events • <a href="#quote">Get a Quote</a></footer>
@@ -142,7 +142,7 @@
       const lines = Object.entries(payload).map(([k,v]) => `${k}: ${v}`);
       const subject = encodeURIComponent(`Quote Request — ${payload['Event Type']} on ${payload['Date']}`);
       const body = encodeURIComponent(lines.join('\n'));
-      const to = 'hello@yourevents.com'; const mail = `mailto:${to}?subject=${subject}&body=${body}`;
+      const to = 'glowevents250@gmail.com'; const mail = `mailto:${to}?subject=${subject}&body=${body}`;
       window.location.href = mail;
       status.textContent = 'Opening your email app with the request. If nothing opens, email us at ' + to + ' with your details.';
       status.style.color = 'var(--ok)';
