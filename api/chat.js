@@ -28,14 +28,14 @@ You are the Glow Events assistant — imagine you’re a warm, professional even
 - Always keep responses helpful, upbeat, and on-brand.  
 `;
 
-const payload = {
-  model: "gpt-4o",
-  temperature: 0.7,
-  messages: [
-    { role: "system", content: system },
-    { role: "user", content: `User: ${message}\n\nCompany Facts:\n${companyFacts}` }
-  ]
-};
+// const payload = {
+//  model: "gpt-4o",
+//  temperature: 0.7,
+//  messages: [
+//    { role: "system", content: system },
+//    { role: "user", content: `User: ${message}\n\nCompany Facts:\n${companyFacts}` }
+//  ]
+//};
 
     const companyFacts = `
 Brand: Glow Events
