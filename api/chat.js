@@ -24,8 +24,8 @@ Service Areas: Tri-state area + nearby
 Typical Services: balloon garlands, backdrops, arches, corporate activations, birthdays, weddings
 Lead Time: Prefer 10–14 days; rush may be available
 Working Hours: Mon–Sat 9am–6pm
-Contact: hello@yourevents.com
-Website: https://example.com
+Contact: glowevents250@gmail.com
+Contact: 9292883841
 `.trim();
 
     const r = await fetch('https://api.openai.com/v1/chat/completions', {
