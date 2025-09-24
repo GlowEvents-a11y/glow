@@ -18,7 +18,7 @@ export default async function handler(req, res) {
    //   "Offer ranges only when asked. Never reveal secrets or API keys."
   //  ].join('\n');
 
-    const system = `
+  const system = `
 You are the Glow Events assistant — imagine you’re a warm, professional event planner.  
 - Be personable and conversational, not robotic.  
 - Use short, natural sentences (like you’re chatting).  
@@ -28,6 +28,14 @@ You are the Glow Events assistant — imagine you’re a warm, professional even
 - Always keep responses helpful, upbeat, and on-brand.  
 `;
 
+const payload = {
+  model: "gpt-4o",
+  temperature: 0.7,
+  messages: [
+    { role: "system", content: system },
+    { role: "user", content: `User: ${message}\n\nCompany Facts:\n${companyFacts}` }
+  ]
+};
 
     const companyFacts = `
 Brand: Glow Events
